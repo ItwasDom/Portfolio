@@ -5,16 +5,11 @@
   box-sizing: border-box;
 }
 
-/* 
-  Note: The design uses a dark theme.
-  If it appears too dark for your taste, try adjusting the background-color (e.g., use #181818 or a gradient).
-*/
 body {
   background-color: #121212;
   color: #ffffff;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   line-height: 1.6;
-  /* Custom cursor: simple white circle */
   cursor: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiI+PGNpcmNsZSBjeD0iMTYiIGN5PSIxNiIgcj0iOCIgZmlsbD0id2hpdGUiLz48L3N2Zz4=") 16 16, auto;
 }
 
@@ -22,11 +17,9 @@ body {
 ::-webkit-scrollbar {
   width: 12px;
 }
-
 ::-webkit-scrollbar-track {
   background: #1e1e1e;
 }
-
 ::-webkit-scrollbar-thumb {
   background-color: #555;
   border-radius: 10px;
@@ -46,19 +39,16 @@ header {
   align-items: center;
   z-index: 100;
 }
-
 header h1 {
   font-size: 1.8rem;
   letter-spacing: 2px;
 }
-
 nav a {
   margin-left: 20px;
   text-decoration: none;
   color: #ffffff;
   transition: color 0.3s;
 }
-
 nav a:hover {
   color: #bbbbbb;
 }
@@ -69,18 +59,15 @@ main {
   margin: 0 auto;
   padding: 140px 20px 80px;
 }
-
 section {
   margin-bottom: 80px;
 }
-
 h2 {
   font-size: 2.2rem;
   margin-bottom: 20px;
   border-bottom: 2px solid #333;
   padding-bottom: 10px;
 }
-
 p {
   margin-bottom: 20px;
 }
@@ -93,19 +80,16 @@ p {
   margin-left: 20px;
   margin-bottom: 20px;
 }
-
 .experience-list li,
 .skills-list li,
 .connect-list li {
   margin-bottom: 10px;
 }
-
 .connect-list a {
   color: #ffffff;
   text-decoration: underline;
   transition: color 0.3s;
 }
-
 .connect-list a:hover {
   color: #bbbbbb;
 }
@@ -116,23 +100,19 @@ p {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
 }
-
 .portfolio-item {
   position: relative;
   overflow: hidden;
 }
-
 .portfolio-item img {
   width: 100%;
   height: auto;
   display: block;
   transition: transform 0.3s;
 }
-
 .portfolio-item:hover img {
   transform: scale(1.05);
 }
-
 .portfolio-item .overlay {
   position: absolute;
   top: 0;
@@ -146,11 +126,9 @@ p {
   justify-content: center;
   transition: opacity 0.3s;
 }
-
 .portfolio-item:hover .overlay {
   opacity: 1;
 }
-
 .overlay h3 {
   color: #fff;
   font-size: 1.5rem;
@@ -167,7 +145,6 @@ p {
   border-radius: 4px;
   transition: background-color 0.3s, transform 0.3s;
 }
-
 .btn:hover {
   background-color: #333;
   transform: translateY(-3px);
