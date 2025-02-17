@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+/* 
+  Note: The design uses a dark theme.
+  If it appears too dark for your taste, try adjusting the background-color (e.g., use #181818 or a gradient).
+*/
 body {
   background-color: #121212;
   color: #ffffff;
