@@ -7,107 +7,144 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Header with Logo and Navigation -->
   <header>
-    <h1>Dominic Martinez</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#skills">Skills</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#connect">Connect</a>
-    </nav>
+    <div class="container">
+      <div class="logo">Dominic Martinez</div>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#connect">Connect</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-overlay">
+      <h1>Capturing Moments, Creating Stories</h1>
+      <p>Photography & Cinematography by Dominic Martinez</p>
+      <a class="btn" href="#portfolio">View Portfolio</a>
+    </div>
+  </section>
+
+  <!-- Main Content -->
   <main>
     <!-- About Section -->
-    <section id="about">
-      <h2>About Me</h2>
-      <p>I’m Dominic Martinez, a passionate photographer and cinematographer based in San Antonio, TX. With a background in Digital Cinematography from Full Sail University and years of experience in both photography and video production, I bring stories to life through my lens.</p>
-      <p>My work is dedicated to capturing moments that resonate emotionally while blending artistic vision with technical precision. Whether it’s a cinematic narrative or a single, striking image, I strive to create visuals that speak volumes.</p>
+    <section id="about" class="content-section">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>
+          I’m Dominic Martinez, a passionate photographer and cinematographer based in San Antonio, TX. With a background in Digital Cinematography from Full Sail University and extensive experience in photography and video production, I bring stories to life through my lens.
+        </p>
+        <p>
+          My work captures emotions and moments, blending artistic vision with technical precision to create unforgettable visuals.
+        </p>
+      </div>
     </section>
 
     <!-- Experience Section -->
-    <section id="experience">
-      <h2>Experience</h2>
-      <h3>Work Experience</h3>
-      <ul class="experience-list">
-        <li>
-          <strong>Sales Associate</strong> at The Camera Exchange, San Antonio, TX<br>
-          <em>February 2022 - Present</em>
-        </li>
-        <li>
-          <strong>Sales Lead</strong> at MarketSource/Target Mobile, San Antonio, TX<br>
-          <em>May 2021 - Present</em>
-        </li>
-        <li>
-          <strong>Additional Roles:</strong> Security Guard, Event Security, Customer Service, and Culinary Positions<br>
-          <em>Various positions in San Antonio, TX</em>
-        </li>
-      </ul>
-      <h3>Education</h3>
-      <ul class="experience-list">
-        <li>
-          <strong>Bachelor's in Digital Cinematography</strong><br>
-          Full Sail University, July 2020 - Present
-        </li>
-      </ul>
+    <section id="experience" class="content-section">
+      <div class="container">
+        <h2>Experience</h2>
+        <div class="experience">
+          <h3>Work Experience</h3>
+          <ul>
+            <li>
+              <strong>Sales Associate</strong> – The Camera Exchange, San Antonio, TX <span>(Feb 2022 - Present)</span>
+            </li>
+            <li>
+              <strong>Sales Lead</strong> – MarketSource/Target Mobile, San Antonio, TX <span>(May 2021 - Present)</span>
+            </li>
+            <li>
+              <strong>Various Roles</strong> – Security, Event Security, Customer Service, and Culinary <span>(Various positions in San Antonio, TX)</span>
+            </li>
+          </ul>
+          <h3>Education</h3>
+          <ul>
+            <li>
+              <strong>Bachelor's in Digital Cinematography</strong> – Full Sail University <span>(Jul 2020 - Present)</span>
+            </li>
+          </ul>
+        </div>
+      </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul class="skills-list">
-        <li>Photography (8 years)</li>
-        <li>Filming (7 years)</li>
-        <li>Video Production (6 years)</li>
-        <li>Video Editing (6 years)</li>
-        <li>Adobe Premiere Pro (6 years)</li>
-        <li>Adobe After Effects (2 years)</li>
-        <li>Adobe Lightroom (6 years)</li>
-        <li>Adobe Photoshop (6 years)</li>
-        <li>Graphic Design (7 years)</li>
-      </ul>
+    <section id="skills" class="content-section">
+      <div class="container">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+          <li>Photography (8 years)</li>
+          <li>Filming (7 years)</li>
+          <li>Video Production (6 years)</li>
+          <li>Video Editing (6 years)</li>
+          <li>Adobe Premiere Pro (6 years)</li>
+          <li>Adobe After Effects (2 years)</li>
+          <li>Adobe Lightroom (6 years)</li>
+          <li>Adobe Photoshop (6 years)</li>
+          <li>Graphic Design (7 years)</li>
+        </ul>
+      </div>
     </section>
 
     <!-- Portfolio Section -->
-    <section id="portfolio">
-      <h2>Portfolio</h2>
-      <div class="portfolio-grid">
-        <!-- Replace these placeholders with your actual work -->
-        <div class="portfolio-item">
-          <img src="https://via.placeholder.com/600x400?text=Cinematography+Project+1" alt="Cinematography Project 1">
-          <div class="overlay"><h3>Cinematography</h3></div>
-        </div>
-        <div class="portfolio-item">
-          <img src="https://via.placeholder.com/600x400?text=Photography+Project+1" alt="Photography Project 1">
-          <div class="overlay"><h3>Photography</h3></div>
-        </div>
-        <div class="portfolio-item">
-          <img src="https://via.placeholder.com/600x400?text=Cinematography+Project+2" alt="Cinematography Project 2">
-          <div class="overlay"><h3>Cinematic Stories</h3></div>
-        </div>
-        <div class="portfolio-item">
-          <img src="https://via.placeholder.com/600x400?text=Photography+Project+2" alt="Photography Project 2">
-          <div class="overlay"><h3>Visual Moments</h3></div>
+    <section id="portfolio" class="content-section">
+      <div class="container">
+        <h2>Portfolio</h2>
+        <div class="portfolio-grid">
+          <div class="portfolio-item">
+            <img src="https://via.placeholder.com/600x400?text=Cinematography+1" alt="Cinematography 1">
+            <div class="overlay">
+              <h3>Cinematography</h3>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <img src="https://via.placeholder.com/600x400?text=Photography+1" alt="Photography 1">
+            <div class="overlay">
+              <h3>Photography</h3>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <img src="https://via.placeholder.com/600x400?text=Cinematography+2" alt="Cinematography 2">
+            <div class="overlay">
+              <h3>Cinematic Stories</h3>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <img src="https://via.placeholder.com/600x400?text=Photography+2" alt="Photography 2">
+            <div class="overlay">
+              <h3>Visual Moments</h3>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Connect Section -->
-    <section id="connect">
-      <h2>Connect</h2>
-      <p>If you're interested in collaborating or booking a session, let's connect!</p>
-      <ul class="connect-list">
-        <li>Email: <a href="mailto:itwasdom@gmail.com">itwasdom@gmail.com</a></li>
-        <li>Instagram: <a href="https://instagram.com/itwasdom/" target="_blank">instagram.com/itwasdom/</a></li>
-        <li>X.com: <a href="https://x.com/itwasdom" target="_blank">x.com/itwasdom</a></li>
-        <li>Discord: <a href="https://discord.gg/nspJVwEMbV" target="_blank">Discord</a></li>
-      </ul>
+    <section id="connect" class="content-section">
+      <div class="container">
+        <h2>Connect</h2>
+        <p>If you're interested in collaborating or booking a session, let's connect!</p>
+        <ul class="connect-list">
+          <li>Email: <a href="mailto:itwasdom@gmail.com">itwasdom@gmail.com</a></li>
+          <li>Instagram: <a href="https://instagram.com/itwasdom/" target="_blank">instagram.com/itwasdom/</a></li>
+          <li>X.com: <a href="https://x.com/itwasdom" target="_blank">x.com/itwasdom</a></li>
+          <li>Discord: <a href="https://discord.gg/nspJVwEMbV" target="_blank">Join Discord</a></li>
+        </ul>
+      </div>
     </section>
   </main>
 
+  <!-- Footer -->
   <footer>
-    &copy; 2025 Dominic Martinez. All rights reserved.
+    <div class="container">
+      &copy; 2025 Dominic Martinez. All rights reserved.
+    </div>
   </footer>
 </body>
 </html>
