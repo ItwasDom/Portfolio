@@ -59,6 +59,8 @@ main {
   max-width: 1200px;
   margin: 0 auto;
   padding: 140px 20px 80px;
+  /* Temporary background for debugging; remove when content appears as expected */
+  background-color: #1a1a1a;
 }
 section {
   margin-bottom: 80px;
