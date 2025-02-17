@@ -13,54 +13,63 @@ body {
   line-height: 1.6;
 }
 
+/* Vertical Navigation Bar */
+.vertical-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 100vh;
+  background-color: #1a1a1a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  z-index: 100;
+}
+
+.vertical-nav .nav-logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #f0f0f0;
+  margin-bottom: 20px;
+}
+
+.vertical-nav ul {
+  list-style: none;
+  width: 100%;
+}
+
+.vertical-nav ul li {
+  width: 100%;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.vertical-nav ul li a {
+  display: block;
+  width: 100%;
+  color: #f0f0f0;
+  font-size: 1.5rem;
+  padding: 10px 0;
+  transition: background-color 0.3s;
+}
+
+.vertical-nav ul li a:hover {
+  background-color: #333;
+}
+
+/* Main Content (offset to the right of vertical nav) */
+.main-content {
+  margin-left: 70px;
+}
+
 /* Container */
 .container {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
-}
-
-/* Header - Slim and fixed */
-header {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #1a1a1a;
-  padding: 10px 0;
-  z-index: 100;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-header .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-header nav ul {
-  list-style: none;
-  display: flex;
-}
-
-header nav ul li {
-  margin-left: 15px;
-}
-
-header nav ul li a {
-  text-decoration: none;
-  color: #f0f0f0;
-  font-size: 1.2rem;
-  transition: color 0.3s;
-}
-
-header nav ul li a:hover {
-  color: #bbbbbb;
 }
 
 /* Hero Section */
@@ -79,7 +88,7 @@ header nav ul li a:hover {
 }
 
 #hero h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 20px;
 }
 
@@ -90,7 +99,7 @@ header nav ul li a:hover {
 
 #hero .btn {
   display: inline-block;
-  padding: 12px 25px;
+  padding: 10px 20px;
   background-color: #e74c3c;
   color: #fff;
   text-decoration: none;
@@ -104,13 +113,12 @@ header nav ul li a:hover {
 
 /* Content Sections */
 .content-section {
-  padding: 80px 0;
+  padding: 60px 0;
   text-align: center;
-  margin-top: 60px; /* ensure content doesn't hide behind fixed header */
 }
 
 .content-section h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 20px;
   border-bottom: 2px solid #444;
   display: inline-block;
@@ -130,7 +138,7 @@ header nav ul li a:hover {
 }
 
 .experience h3 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   margin-bottom: 10px;
 }
 
@@ -195,24 +203,20 @@ header nav ul li a:hover {
   font-size: 1.5rem;
 }
 
-/* Connect Section */
-.connect-list {
-  list-style: none;
-  margin-top: 20px;
-}
-
-.connect-list li {
-  margin-bottom: 10px;
-}
-
-.connect-list a {
-  color: #e74c3c;
+/* Connect Section (single button) */
+.connect-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #e74c3c;
+  color: #fff;
   text-decoration: none;
-  transition: color 0.3s;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  font-size: 1rem;
 }
 
-.connect-list a:hover {
-  color: #c0392b;
+.connect-btn:hover {
+  background-color: #c0392b;
 }
 
 /* Footer */
