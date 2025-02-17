@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Dominic Martinez | Photographer & Cinematographer</title>
   <link rel="stylesheet" href="styles.css" />
-  <!-- Font Awesome CDN for icons -->
+  <!-- Font Awesome for icons -->
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -15,33 +15,49 @@
   />
 </head>
 <body>
-  <!-- Slim, fixed navigation header with icons -->
-  <header>
-    <div class="container">
-      <div class="logo">DM</div>
-      <nav>
-        <ul>
-          <li><a href="#about" title="About"><i class="fas fa-user"></i></a></li>
-          <li><a href="#experience" title="Experience"><i class="fas fa-briefcase"></i></a></li>
-          <li><a href="#skills" title="Skills"><i class="fas fa-cogs"></i></a></li>
-          <li><a href="#portfolio" title="Portfolio"><i class="fas fa-images"></i></a></li>
-          <li><a href="#connect" title="Connect"><i class="fas fa-envelope"></i></a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <!-- Vertical Navigation Bar -->
+  <nav class="vertical-nav">
+    <div class="nav-logo">DM</div>
+    <ul>
+      <li>
+        <a href="#about" title="About">
+          <i class="fas fa-user"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#experience" title="Experience">
+          <i class="fas fa-briefcase"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#skills" title="Skills">
+          <i class="fas fa-cogs"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#portfolio" title="Portfolio">
+          <i class="fas fa-images"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#connect" title="Connect">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
 
-  <!-- Hero Section -->
-  <section id="hero">
-    <div class="hero-overlay">
-      <h1>Capturing Moments, Creating Stories</h1>
-      <p>Photography & Cinematography by Dominic Martinez</p>
-      <a class="btn" href="#portfolio">View Portfolio</a>
-    </div>
-  </section>
+  <!-- Main Content (offset to avoid nav bar) -->
+  <div class="main-content">
+    <!-- Hero Section -->
+    <section id="hero">
+      <div class="hero-overlay">
+        <h1>Capturing Moments, Creating Stories</h1>
+        <p>Photography & Cinematography by Dominic Martinez</p>
+        <a class="btn" href="#portfolio">View Portfolio</a>
+      </div>
+    </section>
 
-  <!-- Main Content -->
-  <main>
     <!-- About Section -->
     <section id="about" class="content-section">
       <div class="container">
@@ -133,20 +149,15 @@
       </div>
     </section>
 
-    <!-- Connect Section -->
+    <!-- Connect Section (with a single button) -->
     <section id="connect" class="content-section">
       <div class="container">
         <h2>Connect</h2>
-        <p>If you're interested in collaborating or booking a session, let's connect!</p>
-        <ul class="connect-list">
-          <li>Email: <a href="mailto:itwasdom@gmail.com">itwasdom@gmail.com</a></li>
-          <li>Instagram: <a href="https://instagram.com/itwasdom/" target="_blank">instagram.com/itwasdom/</a></li>
-          <li>X.com: <a href="https://x.com/itwasdom" target="_blank">x.com/itwasdom</a></li>
-          <li>Discord: <a href="https://discord.gg/nspJVwEMbV" target="_blank">Join Discord</a></li>
-        </ul>
+        <p>If you're interested in collaborating or booking a session, please get in touch.</p>
+        <a class="btn connect-btn" href="mailto:itwasdom@gmail.com">Contact Me</a>
       </div>
     </section>
-  </main>
+  </div>
 
   <!-- Footer -->
   <footer>
