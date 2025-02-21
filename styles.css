@@ -73,15 +73,20 @@ header .logo {
   width: 100%;
   margin: 0 auto;
 }
+
+/* Updated profile picture styles */
 #hero .profile-pic {
   width: 100px;
   height: 100px;
+  max-width: 100px;
+  max-height: 100px;
   object-fit: cover;
   border: 3px solid #fff;
-  border-radius: 4px;
-  margin: 0 auto 20px; /* center and margin-bottom */
+  border-radius: 50%;  /* makes it circular */
+  margin: 0 auto 20px;
   display: block;
 }
+
 #hero h1 {
   font-size: 2.5rem;
   margin-bottom: 20px;
@@ -260,9 +265,12 @@ footer {
   #hero p {
     font-size: 1rem;
   }
+  /* Fixed size for profile picture on mobile */
   #hero .profile-pic {
     width: 80px;
     height: 80px;
+    max-width: 80px;
+    max-height: 80px;
   }
   .content-section h2 {
     font-size: 2rem;
